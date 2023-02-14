@@ -1,0 +1,15 @@
+cd clavmall-api/clavmall-hoster-api
+npm run start
+
+cd clavmall-ui/clavmall-hoster-ui
+npm start
+
+cd clavmall-api/clavmall-estore-api
+npm start
+
+cd clavmall-ui/clavmall-estore-ui
+npm start
+
+cd ../
+cd node/DoneWithIt
+npm start
