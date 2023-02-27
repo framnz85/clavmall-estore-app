@@ -5,3 +5,5 @@ export const apiURL = Platform.OS === "ios"
     : "http://10.0.2.2:8000/api";
 
 export const estoreID = '613216389261e003d696cc65';
+
+export const clavmallImg = 'http://192.168.50.10';

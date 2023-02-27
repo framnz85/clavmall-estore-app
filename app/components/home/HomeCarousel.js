@@ -4,6 +4,8 @@ import { View, Text, TouchableOpacity, StyleSheet, Dimensions, Image, Platform }
 import Carousel from 'react-native-snap-carousel-v4';
 import TypeWriter from 'react-native-typewriter'
 
+import { clavmallImg, estoreID } from '../../functions/env';
+
 const HomeCarousel = ({ navigation }) => {
   const [typingEnd, setTypingEnd] = useState(1)
   
@@ -15,7 +17,7 @@ const HomeCarousel = ({ navigation }) => {
   const renderItem = ({item, index}) => {
         return (
           <View key={index}>
-            <Image source={{ uri: item.url }} style={styles.image} />
+            <Image source={{ uri: clavmallImg + "/estore_images/estore" + estoreID + "/thumb/" + item.url }} style={styles.image} />
           </View>
         );
   }

@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Image, Text, StyleSheet, TouchableHighlight, Platform } from 'react-native';
 
 import showAverage from '../../functions/rating';
+import { clavmallImg, estoreID } from '../../functions/env';
 
 const noImage = "../../images/noimage.jpg";
 
@@ -15,7 +16,7 @@ function ProductCard({product, navigation}) {
                 <View>
                     <Image source={
                         images && images.length > 0
-                            ? { uri: images[0].url }
+                            ? { uri: clavmallImg + "/estore_images/estore" + estoreID + "/thumb/" + images[0].url }
                             : require(noImage)
                     } style={styles.image} />
                     <Text numberOfLines={2} style={styles.details}>
